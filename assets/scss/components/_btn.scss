@@ -1,0 +1,44 @@
+.btn {
+  cursor: pointer;
+  font: inherit;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 4px 16px;
+
+  &--primary {
+    background: #1693f8;
+    color: whitesmoke;
+    border-color: #1693f8;
+  }
+  &--secondary {
+    background: rgb(163, 0, 54);
+    color: white;
+    border-color: rgb(163, 0, 54)
+  }
+  &--text {
+    border: 1px solid transparent;
+    background: transparent;
+    &.btn--primary {
+      color: #1693f8
+    }
+    &.btn--secondary {
+      color: rgb(163, 0, 54)
+    }
+  }
+  &--outlined {
+    border: 1px solid #333;
+    background: transparent;
+    &.btn--primary {
+      color: #1693f8;
+      border-color: initial;
+    }
+    &.btn--secondary {
+      color: rgb(163, 0, 54);
+      border-color: initial;
+    }
+  }
+  &--raised {
+    box-shadow: 1px 1px 2px #888;
+  }
+}
